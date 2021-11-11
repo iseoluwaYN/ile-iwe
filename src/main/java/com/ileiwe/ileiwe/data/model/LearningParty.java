@@ -35,6 +35,9 @@ public class LearningParty {
 
     @CreationTimestamp   //persists the date and time the entity was created in the db
     private LocalDateTime dateCreated;
+
+    private String token;
+
     @OneToMany(cascade = CascadeType.PERSIST)
     private List<Authority> authorities;
 
