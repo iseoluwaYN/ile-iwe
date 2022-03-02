@@ -1,11 +1,12 @@
-package com.ileiwe.ileiwe.service.instructor;
+package com.ileiwe.ileiwe.service.course;
 
 import com.ileiwe.ileiwe.data.dto.CourseDto;
 import com.ileiwe.ileiwe.data.model.Course;
 import com.ileiwe.ileiwe.data.repository.CourseRepository;
+import com.ileiwe.ileiwe.service.course.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class CourseServiceImpl implements  CourseService{
+public class CourseServiceImpl implements CourseService {
 
     @Autowired
     CourseRepository courseRepository;
@@ -32,7 +33,7 @@ public class CourseServiceImpl implements  CourseService{
 
     @Override
     public Course getCourse(Course id) {
-
         return courseRepository.getById(id);
     }
+
 }

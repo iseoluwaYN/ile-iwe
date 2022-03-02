@@ -1,4 +1,4 @@
-package com.ileiwe.ileiwe.service.instructor;
+package com.ileiwe.ileiwe.service.course;
 
 import com.ileiwe.ileiwe.data.dto.CourseDto;
 import com.ileiwe.ileiwe.data.model.Course;
